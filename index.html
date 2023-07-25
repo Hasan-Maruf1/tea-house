@@ -28,7 +28,9 @@
             theme: {
                 extend: {
                     colors: {
-                        clifford: '#da373d',
+                    
+                        'gray-start': '#f00',
+                        'gray-end': '#FF8938',
                     }
                 }
             }
@@ -50,7 +52,7 @@
 
                     <p class="py-6">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.
                     </p>
-                    <button class="btn btn-primary">Explore More</button>
+                    <button class="btn bg-gradient-to-l from-gray-start to-gray-end text-white">Explore More</button>
                 </div>
                 <div>
                     <img src="images/banner.png" class="max-w-sm " />
@@ -162,7 +164,7 @@
         </section>
         <!-- Super client section -->
         <section class=" mx-4 md:mx-10 lg:mx-14 my-24 flex flex-col lg:flex-row gap-10
-                        rounded-xl bg-gradient-to-l from-red-600 to-[#FF8938] px-16 py-10">
+                        rounded-xl bg-gradient-to-l from-gray-start to-gray-end px-16 py-10">
             <div class="flex items-center flex-1">
                 <div class="text-white space-y-5 pr-10">
                     <h2 class="text-5xl font-extrabold">Meet Our Super <br>
@@ -170,6 +172,7 @@
                     <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered
                         alteration in some form, by injected humour, or randomised words which don't look even slightly
                         believable. </p>
+                        <button class="btn bg-white text-gray-start" >Show All</button>
                 </div>
             </div>
 
@@ -221,8 +224,51 @@
 
     </main>
 
-    <footer>
+    <footer class=" px-40 py-10 bg-base-200 text-base-content">
+        <div class="flex justify-between py-8">
+            <img src="images/cup.png" alt="">
+            <p>Ready to get strated? <span><button class="btn bg-gradient-to-l from-gray-start to-gray-end text-white">Get Started</button></span></p>
+        </div>
 
+
+        <div class="footer ">
+            <div>
+                <span class="footer-title">Services</span>
+                <a class="link link-hover">Branding</a>
+                <a class="link link-hover">Design</a>
+                <a class="link link-hover">Marketing</a>
+                <a class="link link-hover">Advertisement</a>
+            </div>
+            <div>
+                <span class="footer-title">Company</span>
+                <a class="link link-hover">About us</a>
+                <a class="link link-hover">Contact</a>
+                <a class="link link-hover">Jobs</a>
+                <a class="link link-hover">Press kit</a>
+            </div>
+            <div>
+                <span class="footer-title">Legal</span>
+                <a class="link link-hover">Terms of use</a>
+                <a class="link link-hover">Privacy policy</a>
+                <a class="link link-hover">Cookie policy</a>
+            </div>
+            <div>
+                <span class="footer-title">Newsletter</span>
+                <div class="form-control w-80">
+                    <label class="label">
+                        <span class="label-text">Enter your email address</span>
+                    </label>
+                    <div class="relative">
+                        <input type="text" placeholder="username@site.com" class="bg-transparent border-b-2 border-black outline-none py-4" />
+                        <button class="btn  bg-gradient-to-l from-gray-start to-gray-end absolute top-0 right-0 rounded-full text-white"><i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center pt-5">
+            <p>Copyright © 2023 - All right reserved by ACME Industries Ltd</p>
+        </div>
     </footer>
 
 
